@@ -207,10 +207,6 @@ p {
     height: 100%;
 }
 
-.imagenes {
-    max-width: 375px;
-    max-height: 500px;
-}
 
 .link:hover {
     display: inline-block;
@@ -423,12 +419,6 @@ form input[type="reset"]:hover {
 /* MEDIA QUERIES */
 @media (max-width: 991px) {
     body {
-        grid-template-areas:
-            "header"
-            "navbar"
-            "content"
-            "novedades"
-            "footer";
         grid-template-columns: 1fr;
     }
 
@@ -449,7 +439,7 @@ form input[type="reset"]:hover {
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .novedades {
@@ -457,8 +447,12 @@ form input[type="reset"]:hover {
         display: none;
     }
 
-    p {
-        font-size: 0.9rem;
+    p, h2, h3, h4, .nav-link, .footer a {
+        font-size: 1.1rem;
+    }
+
+    .offcanvas .nav-link {
+        font-size: 20px;
     }
 }
 
