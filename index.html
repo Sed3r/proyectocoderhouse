@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <title>After Work</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html">
+            <h1>After Work</h1>
+        </a>
+    </header>
+
+    <!-- NAVBAR (Responsive) -->
+    <nav class="navbar bg-body-tertiary d-lg-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">After Work 🕹️</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/juegos.html">Juegos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/quienes-somos.html">Quiénes Somos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="./img/afterwork.png" class="logo" alt="Logo After Work">
+        <nav>
+            <ul>
+                <li><a href="./pages/juegos.html">Juegos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/galeria.html">Galería</a></li>
+                <li><a href="./pages/quienes-somos.html">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+        <h2>Noticias</h2>
+
+        <article>
+            <div class="link">
+                <a href="https://www.nintendo.com/es-es/Hardware/Nintendo-Switch-2/Nintendo-Switch-2-2785301.html" target="_blank" rel="noopener noreferrer">
+                    <h3>Nintendo Switch 2</h3>
+                </a>
+            </div>
+            <div class="tags">
+                <span class="tag">Nintendo</span>
+                <span class="tag">Consola</span>
+                <span class="tag">2025</span>
+            </div>
+            <br>
+            <img class="imagenes" src="./img/ns2.jpeg" alt="Nintendo Switch 2">
+            <p>¡Ya está aquí el siguiente paso en la evolución de Nintendo Switch!
+                <br>Juega en una pantalla más grande, de 1080p, o conecta la consola al televisor para jugar en una resolución de hasta 4K*. Gracias a la compatibilidad con el alto rango dinámico (HDR) y una frecuencia de imágenes de hasta 120 fps, disfrutarás de colores nítidos e intensos, así como de partidas fluidas.
+                <br>Acopla los nuevos mandos Joy-Con 2 a la consola con los conectores magnéticos. Incluso puedes usar ambos mandos a modo de ratón en juegos compatibles.
+                <br>Pásalo en grande con juegos nuevos y exclusivos para Nintendo Switch 2, como Mario Kart World. Además, ¡podrás seguir jugando a los títulos de Nintendo Switch que ya tengas**!
+            </p>
+            <h3>Tráiler</h3>
+            <div>
+                <iframe width="600" height="450" class="trailer" src="https://www.youtube.com/embed/9flte56erE8" title="Nintendo Switch 2 – Overview Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+    </main>
+
+    <!-- NOVEDADES -->
+    <section class="novedades">
+        <h3>Novedades</h3>
+        <ul>
+            <li>Últimos lanzamientos</li>
+            <li>
+                <a target="_blank" href="https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/">
+                    <img src="./img/expedition33.jpg" width="auto" height="140" alt="Clair Obscur: Expedition 33">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://store.steampowered.com/app/2623190/The_Elder_Scrolls_IV_Oblivion_Remastered/">
+                    <img src="./img/oblivion.webp" width="auto" height="140" alt="The Elder Scrolls IV: Oblivion Remastered">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://store.steampowered.com/app/3017860/DOOM_The_Dark_Ages/">
+                    <img src="./img/DOOM The Dark Ages.avif" width="auto" height="140" alt="DOOM: The Dark Ages">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>After Work 🕹️</h4>
+                <p>Tu portal gamer retro en la web.</p>
+            </div>
+            <div class="footer-contact">
+                <h5>Contacto</h5>
+                <p>Email: contacto@afterwork.com</p>
+                <p>Chajarí, Entre Ríos, Argentina</p>
+            </div>
+            <div class="footer-social">
+                <h5>Redes</h5>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://x.com/" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 After Work. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
+
