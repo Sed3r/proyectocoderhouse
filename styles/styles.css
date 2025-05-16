@@ -125,11 +125,14 @@ header h1:hover {
 
 /* CONTENIDO PRINCIPAL */
 main.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     grid-area: content;
     padding: 20px;
     color: #09beeb;
     font-size: 20px;
-    text-align: justify;
     line-height: 1.6;
 }
 
@@ -163,16 +166,12 @@ main.content {
 h2 {
     color: #09beeb;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h3, h4, p {
     padding: 8px 0;
-}
-
-.wallpaper {
     text-align: center;
-    font-size: 2rem;
-    margin-top: 30px;
 }
 
 p {
@@ -184,8 +183,24 @@ p {
     word-wrap: break-word;
 }
 
+.wallpaper {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+
 /* IMÁGENES Y ENLACES */
-.imagenes, .trailer {
+.imagenes {
+    display: block;
+    margin: 20px auto;
+    max-width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.trailer {
     max-width: 100%;
     width: 100%;
     border-radius: 10px;
