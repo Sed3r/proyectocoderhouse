@@ -71,9 +71,23 @@ header h1:hover {
     color: white;
 }
 
-.offcanvas .nav-link {
+.offcanvas-top {
+    background-color: #121212;
+    color: white;
+}
+
+.offcanvas-body {
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offcanvas-body .nav-link {
     color: #09beeb;
     font-size: 18px;
+    text-align: center;
 }
 
 .offcanvas .nav-link:hover {
@@ -313,6 +327,10 @@ form input[type="reset"]:hover {
     background-color: #5a6268;
 }
 
+form ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
 /* CAROUSEL */
 .carousel {
     border-radius: 15px;
