@@ -1,0 +1,49 @@
+.carousel {
+    @include border-radius(15px);
+    overflow: hidden;
+    @include box-shadow(0 4px 15px rgba(0, 0, 0, 0.2));
+    .carousel-inner {
+    max-height: 800px;
+        img {
+            @include border-radius(15px);
+            object-fit: cover;
+            @include transition(transform 0.5s ease);
+            &:hover {
+            transform: scale(1.05);
+            }
+        }
+    }
+    .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    button {
+        width: auto;
+        height: auto;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: transparent;
+        border: 1px solid #ccc;
+        color: #fff;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        &.active {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    @include icon-style(#007bff);
+    }
+}

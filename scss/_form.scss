@@ -1,0 +1,46 @@
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: $form-bg;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    h2 {
+    font-size: 25px;
+    color: #09beeb;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    @include input-base;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+    @include input-focus;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+    @include button-base;
+    }
+    input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    &:hover {
+        background-color: #0056b3;
+    }
+    }
+    input[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+    &:hover {
+        background-color: #5a6268;
+    }
+    }
+    ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    }
+}

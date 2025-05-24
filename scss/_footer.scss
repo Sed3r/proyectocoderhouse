@@ -1,0 +1,33 @@
+.footer {
+    grid-area: footer;
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 40px 20px 20px;
+    text-align: center;
+        .footer-container {
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    h5 {
+    color: #09beeb;
+    margin-bottom: 10px;
+    }
+    a {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 5px;
+    display: block;
+    &:hover {
+        color: #df0596;
+    }
+    }
+    .footer-copy {
+    margin-top: 30px;
+    font-size: 12px;
+    border-top: 1px solid #09beeb44;
+    padding-top: 10px;
+    }
+}

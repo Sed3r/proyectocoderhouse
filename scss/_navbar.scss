@@ -1,0 +1,33 @@
+.navbar {
+    grid-area: navbar;
+    background-color: #121212;
+    border-bottom: 1px solid #09beeb4a;
+    padding: 10px 20px;
+    z-index: 1030;
+        .offcanvas {
+            height: auto;
+            max-height: 50vh;
+            overflow-y: auto;
+            padding-bottom: 1rem;
+            background-color: #12121288;
+            color: white;
+                .nav-link:hover {
+                    color: #df0596;
+                }
+        }
+        .offcanvas-top {
+            background-color: #121212;
+            color: white;
+        }
+        .offcanvas-body {
+            overflow-y: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                .nav-link {
+                    color: #09beeb;
+                    font-size: 18px;
+                    text-align: center;
+                }
+        }
+}

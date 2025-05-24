@@ -1,0 +1,36 @@
+.sidebar {
+    grid-area: sidebar;
+    background-color: #121212;
+    padding: 20px;
+    border-right: 2px solid #09beeb5d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .logo {
+            width: 140px;
+            height: 140px;
+            margin: 20px 0;
+            border-radius: 20px;
+            transition: transform 0.3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #09beeb;
+            transition: color 0.3s;
+            &:hover {
+                color: #df0596;
+            }
+        }
+}

@@ -1,0 +1,25 @@
+.accordion {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: $background;
+    @include border-radius($radius);
+    .accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    }
+    .accordion-button {
+    @include button-style($primary-color, white, bold);
+    &:hover {
+        background-color: $primary-hover;
+    }
+    &.collapsed {
+        @include button-style($light-gray, $text-dark, bold);
+    }
+    }
+    .accordion-body {
+    background-color: white;
+    color: $text-light;
+    @include section-padding(20px);
+    }
+}

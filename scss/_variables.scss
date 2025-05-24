@@ -1,0 +1,192 @@
+/* variables reutilizables */
+
+$primary-color: #007bff;
+$primary-hover: #0057b3b2;
+$light-gray: #e9ecef;
+$text-dark: #333;
+$text-light: #555;
+$form-bg: #fdfdfd17;
+$background: #f9f9f9;
+$radius: 12px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #09beeb;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3, h4 {
+    padding: 8px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    max-width: 1000px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.wallpaper {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.imagenes {
+    display: block;
+    margin: 20px auto;
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.trailer {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+}
+
+.link:hover {
+    display: inline-block;
+    transform: scale(1.05);
+}
+
+article:not(:last-child) {
+    border-bottom: 1px solid #09beeb44;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* mixin formulario */
+
+@mixin input-base {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+@mixin input-focus {
+    border-color: $primary-color;
+    outline: none;
+}
+
+@mixin button-base {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* mixin carousel*/
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+}
+
+@mixin transition($args...) {
+    transition: $args;
+}
+
+
+@mixin icon-style($bg-color) {
+    background-color: $bg-color;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* mixin accordion */
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin button-style($bg, $color, $weight: normal, $padding: 15px) {
+    background-color: $bg;
+    color: $color;
+    font-weight: $weight;
+    padding: $padding;
+}
+
+@mixin section-padding($padding) {
+    padding: $padding;
+}
+
+/* mixin html-body */
+
+@mixin html-body {
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0F0F0F;
+    background-image: 
+        linear-gradient(to right, rgba(170, 170, 170, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(170, 170, 170, 0.1) 1px, transparent 1px);
+    background-size: 35px 35px;
+
+}
+
+html {
+    @include html-body;
+}
+
+body {
+    @include html-body;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "sidebar content novedades"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 250px;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+}
+
+/* mixin responsive */
+
+@mixin media-max($breakpoint) {
+    @media (max-width: $breakpoint) {
+    @content;
+    }
+}
+

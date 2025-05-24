@@ -1,0 +1,21 @@
+.novedades {
+    grid-area: novedades;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    border-left: 2px solid #09beeb5d;
+    max-width: 100%;
+    h3 {
+        color:rgba(255, 251, 0, 0.8);
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    li {
+        margin-bottom: 15px;
+    }
+}
